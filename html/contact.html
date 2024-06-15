@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kiné Santé</title>
+    <meta name="description" content="Contactez Kiné Santé pour prendre rendez-vous ou obtenir plus d'informations sur nos services de kinésithérapie.">
+    <meta name="keywords" content="kinésithérapie, contact, rendez-vous">
+    <meta name="author" content="Kiné Santé Exemple">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Kiné Santé Exemple</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section id="contact">
+                <h2>Contactez-nous</h2>
+                <p>Pour toute question ou pour prendre rendez-vous, veuillez remplir le formulaire ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
+                <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; WSD | Tous droits réservés.</p>
+            <p>Ce site est un exemple, l'entreprise est fictive.</p>
+        </footer>
+    </div>
+</body>
+</html>
