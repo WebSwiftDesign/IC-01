@@ -8,21 +8,22 @@
     <meta name="keywords" content="kinésithérapie, rééducation, bien-être, récupération physique">
     <meta name="author" content="Kiné Santé">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <h1>Kiné Santé</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="html/about.html">À propos</a></li>
-                    <li><a href="html/services.html">Services</a></li>
-                    <li><a href="html/team.html">Équipe</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <button class="open-btn" onclick="toggleNav()">&#9776; Menu</button>
         </header>
+        <nav id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+            <a href="index.html">Accueil</a>
+            <a href="html/about.html">À propos</a>
+            <a href="html/services.html">Services</a>
+            <a href="html/team.html">Équipe</a>
+            <a href="html/contact.html">Contact</a>
+        </nav>
         <div class="content">
             <section>
                 <h2>Bienvenue chez Kiné Santé</h2>

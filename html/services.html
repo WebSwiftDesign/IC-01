@@ -8,21 +8,22 @@
     <meta name="keywords" content="services, kinésithérapie, rééducation, massage thérapeutique, thérapie manuelle">
     <meta name="author" content="Kiné Santé Exemple">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
             <h1>Kiné Santé Exemple</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Équipe</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <button class="open-btn" onclick="toggleNav()">&#9776; Menu</button>
         </header>
+        <nav id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
         <div class="content">
             <section>
                 <h2>Nos Services</h2>

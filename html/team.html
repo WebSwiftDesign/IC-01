@@ -8,30 +8,31 @@
     <meta name="keywords" content="équipe, kinésithérapie, professionnels">
     <meta name="author" content="Kiné Santé Exemple">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <h1>Kiné Santé Exemple</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Équipe</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Kiné Santé</h1>
+            <button class="open-btn" onclick="toggleNav()">&#9776; Menu</button>
         </header>
+        <nav id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
         <div class="content">
             <section>
                 <h2>Notre Équipe</h2>
                 <p>Notre équipe est composée de professionnels expérimentés et passionnés par leur métier. Découvrez nos thérapeutes :</p>
                 <ul>
-                    <li><strong>Dr. Jean Dupont :</strong> Kinésithérapeute spécialisé en rééducation post-chirurgicale.</li>
-                    <li><strong>Marie Martin :</strong> Masseuse thérapeutique avec 10 ans d'expérience.</li>
-                    <li><strong>Paul Durand :</strong> Expert en thérapie manuelle et traitement des douleurs chroniques.</li>
-                    <li><strong>Lucie Lefèvre :</strong> Kinésithérapeute sportive spécialisée dans la prévention des blessures.</li>
+                    <li><strong>Kinésithérapeute spécialisé en rééducation post-chirurgicale</strong></li>
+                    <li><strong>Masseuse thérapeutique avec 10 ans d'expérience</strong></li>
+                    <li><strong>Expert en thérapie manuelle et traitement des douleurs chroniques</strong></li>
+                    <li><strong>Kinésithérapeute sportive spécialisée dans la prévention des blessures</strong></li>
                 </ul>
             </section>
         </div>
@@ -40,5 +41,6 @@
             <p>Ce site est un exemple, l'entreprise est fictive.</p>
         </footer>
     </div>
+    
 </body>
 </html>
